@@ -1,11 +1,15 @@
 package com.mtha.mymatchinggame;
 
-public class Card {
-    int img_id;
-    boolean isClosed;
+import android.widget.Button;
 
-    public Card(int id, boolean isClosed){
-        this.img_id = id;
-        this.isClosed = isClosed;
+public class Card {
+    public int x;
+    public int y;
+    public Button button;
+
+    public Card(Button button, int x,int y) {
+        this.x = x;
+        this.y=y;
+        this.button=button;
     }
 }
