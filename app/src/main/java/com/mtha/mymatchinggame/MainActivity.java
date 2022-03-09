@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         handler = new UpdateCardsHandler();
         loadImages();
-        TextView url = ((TextView)findViewById(R.id.myWebSite));
+        TextView url = ((TextView)findViewById(R.id.myTeams));
         Linkify.addLinks(url, Linkify.WEB_URLS);
 
         backImage =  getResources().getDrawable(R.drawable.ic_launcher_background);
