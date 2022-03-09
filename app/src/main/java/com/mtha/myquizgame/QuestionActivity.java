@@ -18,7 +18,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     RadioButton rdA, rdB, rdC, rdD;
     Button btnNext, btnExit;
     RadioGroup rdGroup;
-
+//note
     QuizGameDB quizGameDB = new QuizGameDB(QuestionActivity.this);;
     ArrayList<CauHoi> lsCauHoi = new ArrayList<>();
     ArrayList<DapAn> lsDapAn = new ArrayList<>();
