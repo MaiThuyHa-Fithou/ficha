@@ -13,6 +13,7 @@ public class SoundHandler {
     public SoundHandler(MainActivity main, boolean soundsOn) {
         this.main = main;
         this.soundsOn = soundsOn;
+        initializeSoundFx();
     }
 
     public void initializeSoundFx() {

@@ -101,6 +101,7 @@
 
             <TextView
                 android:layout_width="120dp"
+                android:id="@+id/best_core"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -188,6 +189,7 @@
             android:layout_below="@+id/layout_panel"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="0dp"
+            android:id="@+id/reset_btn"
             android:background="@android:drawable/ic_menu_rotate"
             tools:ignore="SpeakableTextPresentCheck" />
 

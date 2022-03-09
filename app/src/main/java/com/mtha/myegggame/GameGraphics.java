@@ -30,6 +30,7 @@ public class GameGraphics {
 
     public GameGraphics(MainActivity mainActivity) {
         this.main = mainActivity;
+        initializeGameGraphics();
 
     }
 

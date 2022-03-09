@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        reset_btn = findViewById(R.id.reset_btn);
+        bestScoreView = findViewById(R.id.best_core);
+        setGameTypeface();
+        getGamePreferences();
     }
     private void getGamePreferences() {
 
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         pref = this.getSharedPreferences("com.mtha.eggs", Context.MODE_PRIVATE);
         bestScore = pref.getInt("best", 0);
         soundsOn = pref.getBoolean("soundfx", true);
+        gameGraphics = new GameGraphics(MainActivity.this);
+        soundHandler = new SoundHandler(MainActivity.this,soundsOn);
+        eggGame = new EggGame(MainActivity.this,gameGraphics,soundHandler);
+        eggGame.startGame();
 
     }
 
